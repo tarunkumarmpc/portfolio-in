@@ -124,96 +124,93 @@
   <section id="experience" class="experience">
     <div class="container">
       <h2 class="section-title">Where I've built</h2>
-      <div class="section-subtitle">Professional track record.
-      </div>
+      <div class="section-subtitle">6+ years deploying full-stack autonomy across drones, ground vehicles, and surgical systems.</div>
 
       <div class="timeline">
+
+        <!-- Motion Robotics -->
         <div class="timeline-item fade-up">
           <div class="exp-header">
             <h3 class="exp-role">Senior Robotics Engineer</h3>
-            <div class="exp-company">Motion Robotics (Mobile Robots and Drones)</div>
-            <div class="exp-meta">Jul 2025 – Present | Southampton, UK</div>
+            <div class="exp-company">Motion Robotics &mdash; Mobile Robots &amp; Drones</div>
+            <div class="exp-meta">Jul 2025 – Present &nbsp;|&nbsp; Southampton, UK</div>
           </div>
-          <p class="exp-summary">Owned the <strong>full autonomy lifecycle</strong> for mobile robots and UAVs—from
-            initial simulation development to physical real-world deployment. Engineered a robust <strong>Behavior Tree
-              state machine</strong> orchestrating autonomous Nav2 navigation, <strong>AprilTag-based precision
-              docking</strong>, and automated payload manipulation (lift and secure). Developed and validated a custom
-            <strong>real-time 3D navigation stack</strong> across both simulation and real-world flights. Implemented
-            <strong>custom Ardupilot flight modes</strong> integrating Time-of-Flight (ToF) sensors for precise
-            wall-approach maneuvers. Led comprehensive platform integration by importing custom Fusion 360 CAD into
-            Gazebo
-            for Ardupilot SITL validation, and executed rigorous PID tuning in <strong>both simulated and real-world
-              environments</strong> across small, medium, and <strong>heavy-lift drone architectures</strong>.
+          <p class="exp-summary">
+            Architected the full autonomy stack for mobile robots and UAVs — from simulation to physical field
+            deployment. Built a <strong>C++ Behavior Tree state machine</strong> orchestrating Nav2 navigation,
+            AprilTag docking, and payload manipulation. Deployed <strong>FAST-LIO / POINT-LIO</strong> for
+            LiDAR-inertial state estimation in GPS-denied environments and implemented custom
+            <strong>Ardupilot flight modes</strong> across small, medium, and heavy-lift drone architectures.
           </p>
           <div class="exp-tags">
-            <span>ROS2/Nav2</span><span>Ardupilot SITL</span><span>Behavior Trees</span><span>AprilTag</span><span>
-              3D Navigation</span><span>Gazebo</span>
-          </div>
-        </div>
-        <div class="timeline-item fade-up">
-          <div class="exp-header">
-            <h3 class="exp-role">Drone Engineer</h3>
-            <div class="exp-company">Opteran (Drones) </div>
-            <div class="exp-meta">Apr 2024 – Jun 2025 | Sheffield, UK</div>
-          </div>
-          <p class="exp-summary">Developed an EKF-based Visual-Inertial Odometry system fusing optical flow and IMU
-            data, <strong>improving drone hover stability</strong> in GPS-denied environments. Engineered a fully
-            automated CI/CD validation pipeline integrating Vicon motion capture with ROS2,
-            <strong>cutting manual testing effort by 40%</strong>. Built a custom Nav2 action client for autonomous
-            goal execution, and fine-tuned Scout Mini AMR navigation parameters to
-            <strong>5cm positioning accuracy</strong>. Also designed a ROS2 driver for a Leica Robotic
-            Total Station enabling millimetre-accurate real-time positioning.</p>
-          <div class="exp-tags">
-            <span>EKF VIO</span><span>PX4</span><span>ROS2</span><span>Vicon</span><span>CI/CD
-              Validation</span><span>Nav2</span>
+            <span>ROS2 / Nav2</span><span>Ardupilot SITL</span><span>Behavior Trees</span><span>FAST-LIO</span><span>POINT-LIO</span><span>MPC</span><span>AprilTag</span><span>Gazebo</span>
           </div>
         </div>
 
+        <!-- Opteran -->
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <h3 class="exp-role">Drone Engineer</h3>
+            <div class="exp-company">Opteran &mdash; Drones</div>
+            <div class="exp-meta">Apr 2024 – Jun 2025 &nbsp;|&nbsp; Sheffield, UK</div>
+          </div>
+          <p class="exp-summary">
+            Deployed an <strong>EKF-based VIO</strong> pipeline fusing IMU and optical flow for GPS-denied hover
+            stability. Orchestrated an automated <strong>CI/CD flight test pipeline</strong> using ROS2, Nav2, and
+            Vicon motion capture. Developed an <strong>autonomous validation framework</strong> where robots
+            self-navigate the Vicon space, execute test scenarios, and log performance metrics — enabling systematic
+            algorithm benchmarking.
+          </p>
+          <div class="exp-tags">
+            <span>EKF VIO</span><span>PX4</span><span>MAVLink</span><span>ROS2</span><span>Vicon</span><span>CI/CD</span><span>Nav2</span>
+          </div>
+        </div>
+
+        <!-- MSc gap bridge -->
         <div class="timeline-item timeline-item--edu fade-up">
           <div class="exp-header">
             <h3 class="exp-role">MSc Aerial Robotics <span class="edu-badge">Education</span></h3>
             <div class="exp-company">University of Bristol, UK</div>
-            <div class="exp-meta">Sep 2022 – Sep 2023 | Bristol, UK</div>
+            <div class="exp-meta">Sep 2022 – Sep 2023 &nbsp;|&nbsp; Bristol, UK</div>
           </div>
         </div>
 
+        <!-- SS Innovation -->
         <div class="timeline-item fade-up">
           <div class="exp-header">
             <h3 class="exp-role">Robotics Engineer</h3>
-            <div class="exp-company">SS Innovation (Surgical Robotics)</div>
-            <div class="exp-meta">Aug 2020 – Jul 2022 | Gurgaon, India</div>
+            <div class="exp-company">SS Innovation &mdash; Surgical Robotics</div>
+            <div class="exp-meta">Aug 2020 – Jul 2022 &nbsp;|&nbsp; Gurgaon, India</div>
           </div>
-          <p class="exp-summary">Engineered core control systems and safety architectures for a 6-DOF surgical
-            manipulator, implementing deterministic RTOS algorithms on STM32 via EtherCAT for real-time control
-            in live operating room conditions. Conducted rigorous IK and dynamic
-            modelling, and developed a Qt/QML surgical GUI that <strong>reduced preoperative setup time by 40%</strong>.
-            Designed an OptiTrack head-tracking safety system that <strong>reduced unintended interventions by
-              35%</strong>. Led full-cycle clinical trials at RGCI Hospital for the Mantra Surgical Robotics System,
-            achieving <strong>98% task-completion accuracy</strong> across clinical validation trials. Prepared ISO 13485 compliance
-            documentation.</p>
+          <p class="exp-summary">
+            Wrote <strong>deterministic RTOS control algorithms in C++</strong> for a 6-DOF surgical manipulator,
+            enforcing hard real-time deadlines via EtherCAT on STM32 in live operating room conditions. Designed an
+            <strong>OptiTrack head-tracking safety system</strong> and a Qt/QML surgical GUI. Contributed to clinical
+            trials of the Mantra Surgical System at RGCI Hospital and <strong>ISO 13485 certification</strong>.
+          </p>
           <div class="exp-tags">
-            <span>RTOS</span><span>EtherCAT</span><span>STM32</span><span>Inverse
-              Kinematics</span><span>Qt/C++</span><span>ISO 13485</span>
+            <span>RTOS / C++</span><span>EtherCAT</span><span>STM32</span><span>Actin SDK</span><span>Inverse Kinematics</span><span>Qt/QML</span><span>OptiTrack</span><span>ISO 13485</span>
           </div>
         </div>
 
+        <!-- Flux Auto -->
         <div class="timeline-item fade-up">
           <div class="exp-header">
             <h3 class="exp-role">Robotics Engineer</h3>
-            <div class="exp-company">Flux Auto (Autonomous Vehicles)</div>
-            <div class="exp-meta">Jul 2019 – Jul 2020 | Bangalore, India</div>
+            <div class="exp-company">Flux Auto &mdash; Autonomous Ground Vehicles</div>
+            <div class="exp-meta">Jul 2019 – Jul 2020 &nbsp;|&nbsp; Bangalore, India</div>
           </div>
-          <p class="exp-summary">Owned the core perception and localization stack for autonomous ground vehicles. Fused
-            Robosense 16-channel LiDAR with RTK-GPS and IMU through Kalman/Particle filters, achieving <strong>sub-15cm
-              accuracy</strong> via Autoware's NDT/ICP algorithms. Engineered RANSAC-based ground segmentation,
-            integrated RTAB-Map with ZED stereo cameras for 2D/3D grid mapping, and implemented Lanelet2 HD maps for
-            precision navigation. Used CARLA to simulate <strong>50+ edge cases</strong>, <strong>reducing real-world
-              testing requirements by 40%</strong>.</p>
+          <p class="exp-summary">
+            Owned the core localization stack for autonomous ground vehicles — fusing 16-channel LiDAR, RTK-GPS, and
+            IMU via EKF to achieve <strong>sub-15 cm accuracy</strong> with Autoware NDT/ICP. Integrated RTAB-Map with
+            ZED stereo cameras for 2D/3D grid mapping and designed <strong>Lanelet2 HD routing graphs</strong>.
+            Validated the full stack across 50+ edge cases in CARLA.
+          </p>
           <div class="exp-tags">
-            <span>Autoware</span><span>NDT/ICP</span><span>Sensor
-              Fusion</span><span>PCL</span><span>CARLA</span><span>RTAB-Map</span>
+            <span>Autoware</span><span>NDT/ICP</span><span>EKF Sensor Fusion</span><span>PCL</span><span>CARLA</span><span>RTAB-Map</span><span>Lanelet2</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -441,31 +438,30 @@
         <div class="domain-card fade-up">
           <h3>Surgical &amp; Industrial Arms</h3>
           <ul class="domain-list">
-            <li>6-DOF real-time RTOS control</li>
-            <li>High-precision motion control in live clinical environments</li>
-            <li>EtherCAT hardware synchronization</li>
+            <li>Real-time RTOS &amp; EtherCAT control</li>
             <li>Inverse kinematics &amp; dynamic modelling</li>
-            <li>ISO 13485 compliance &amp; documentation</li>
+            <li>MoveIt2 motion planning</li>
+            <li>RL-based manipulation</li>
+            <li>Safety architectures &amp; ISO 13485</li>
           </ul>
         </div>
         <div class="domain-card fade-up">
           <h3>Drones &amp; UAVs</h3>
           <ul class="domain-list">
             <li>PX4 / Ardupilot autopilot integration</li>
-            <li>EKF-based VIO for GPS-denied environments</li>
-            <li>Vicon motion-capture ground truth pipelines</li>
-            <li>Automated CI/CD flight test validation</li>
-            <li>Quadcopter &amp; fixed-wing build, tune, validate</li>
+            <li>GPS-denied environments</li>
+            <li>3D aerial navigation</li>
+            <li>Custom Ardupilot flight modes</li>
+            <li>Drone tuning</li>
           </ul>
         </div>
         <div class="domain-card fade-up">
           <h3>Autonomous Ground Vehicles</h3>
           <ul class="domain-list">
             <li>Full AV perception stack (Autoware)</li>
-            <li>Multi-sensor fusion: LiDAR + RTK-GPS + IMU</li>
-            <li>NDT/ICP localization at sub-15cm accuracy</li>
-            <li>RANSAC-based ground segmentation pipelines</li>
-            <li>Lanelet2 HD map generation &amp; integration</li>
+            <li>Nav2 &amp; Behavior Tree</li>
+            <li>AprilTag-based precision navigation &amp; docking</li>
+            <li>Lanelet2 HD map routing &amp; multi-sensor EKF</li>
           </ul>
         </div>
       </div>
