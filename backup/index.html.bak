@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarun Kumar Bagadi - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Typed.js for Typing Effect -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <div class="profile-img">
+        <img src="assets/img/profile1.jpeg" alt="Profile Picture" class="img-fluid rounded-circle">
+      </div>
+      <h1><a href="#header">Tarun Kumar Bagadi</a></h1>
+      <h2>I'm <span class="typing"></span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/tarun-kumar-bagdai-9a1673123/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/tarunkumarmpc" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:tarunkumarmpc@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+ <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/profile1.jpeg" class="img-fluid rounded-circle" alt="Profile Picture">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <p>I am a Robotics Engineer with a profound interest in the development and application of mobile robots, robotic manipulators, and drones. My professional passion lies in exploring innovative approaches to autonomous systems, precision engineering, and aerial technologies. I am dedicated to contributing to the advancement of robotics through thoughtful design, rigorous analysis, and a commitment to solving real-world challenges in these dynamic fields.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +44 7495363437</li>
+                <li><i class="fa-solid fa-map-marker-alt"></i> <strong>City:</strong> Bristol, UK, BS13 9AE</li>
+                <li><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> tarunkumarmpc@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  
+  <div class="interests container">
+  <div class="section-title">
+    <h2>Interests</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-4">
+      <div class="icon-box">
+        <i class="ri-code-line" style="color: #ffbb2c;"></i>
+        <h3>Perception</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+      <div class="icon-box">
+        <i class="ri-camera-line" style="color: #e80368;"></i>
+        <h3>SLAM</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+      <div class="icon-box">
+        <i class="ri-database-2-line" style="color: #5578ff;"></i>
+        <h3>Computer Vision</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+      <div class="icon-box">
+        <i class="ri-map-pin-time-line" style="color: #1c7d32;"></i>
+        <h3>Deep Learning</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4">
+      <div class="icon-box">
+        <i class="ri-robot-line" style="color: #28a745;"></i>
+        <h3>Reinforcement Learning</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4">
+      <div class="icon-box">
+        <i class="ri-map-line" style="color: #f1081f;"></i>
+        <h3>Path Planning</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4">
+      <div class="icon-box">
+        <i class="ri-settings-3-line" style="color: #47aeff;"></i>
+        <h3>Control Systems</h3>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mt-4">
+      <div class="icon-box">
+        <i class="ri-cpu-line" style="color: #ffc107;"></i>
+        <h3>Robotics Software Development</h3>
+      </div>
+    </div>
+  </div>
+</div><!-- End Interests -->
+<!-- Education Section -->
+<section id="education" class="services">
+  <div class="container">
+    <!-- Education Title -->
+ <div class="section-title">
+        <h2>Education</h2>
+      </div>
+
+    <!-- Education Content -->
+    <div class="row">
+      <!-- University of Bristol -->
+      <div class="col-lg-6 icon-box">
+        <img src="assets/img/education/uob.png" class="img-fluid" alt="University of Bristol Logo" style="max-height: 80px;">
+        <h4><a href="https://www.bristol.ac.uk/study/postgraduate/taught/msc-aerial-robotics/" target="_blank">University of Bristol</a></h4>
+        <p><em>MSc in Aerial Robotics</em></p>
+        <p>September 2022 - September 2023</p>
+        <h6>Relevant Coursework</h6>
+        <p class="course-list">
+          Aerial robotics<br>
+          Aerospace dynamics<br>
+          Robotics systems<br>
+          Introduction to artificial intelligence<br>
+          Uncertainty modelling for intelligent systems<br>
+
+        </p>
+      </div>
+
+      <!-- IIIT Guwahati -->
+      <div class="col-lg-6 icon-box">
+        <img src="assets/img/education/iiitg.png" class="img-fluid" alt="IIIT Guwahati Logo" style="max-height: 80px;">
+        <h4><a href="https://www.iiitg.ac.in/" target="_blank">IIIT Guwahati</a></h4>
+        <p><em>B.Tech in Electronics and Communication Engineering</em></p>
+        <p>July 2015 - May 2019</p>
+        <h6>Relevant Coursework</h6>
+        <p class="course-list">
+          Data Structures<br>
+          Embedded Systems<br>
+          Operating Systems<br>
+          VLSI Design<br>
+          Control Systems<br>
+
+        </p>
+      </div>
+    </div>
+
+<div class="section-title mt-5">
+        <h2>Online Certifications</h2>
+      </div>
+
+    <!-- Online Certifications Content -->
+    <div class="row">
+      <!-- Robotics Specialization -->
+      <div class="col-lg-3 col-md-6 icon-box">
+        <h4>Robotics Specialization</h4>
+        <p>Coursera</p>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UFD9S9Y8RYB7" target="_blank"><i class="bx bx-link"></i> View Certificate</a>
+      </div>
+
+      <!-- Self-Driving Cars Specialization -->
+      <div class="col-lg-3 col-md-6 icon-box">
+        <h4>Self-Driving Cars Specialization</h4>
+        <p>Coursera</p>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/4RL2N6Y2TS95" target="_blank"><i class="bx bx-link"></i> View Certificate</a>
+      </div>
+
+      <!-- Modern Robotics -->
+      <div class="col-lg-3 col-md-6 icon-box">
+        <h4>Modern Robotics</h4>
+        <p>Coursera</p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/6ZU2TZAQP2MJ" target="_blank"><i class="bx bx-link"></i> View Certificate</a>
+      </div>
+
+      <!-- Programming for Everybody -->
+      <div class="col-lg-3 col-md-6 icon-box">
+        <h4>Programming for Everybody</h4>
+        <p>Coursera</p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/C7C3K4HCZF2E" target="_blank"><i class="bx bx-link"></i> View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Experience Section -->
+   <!-- Start Experience Section -->
+<section id="experience" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Experience</h2>
+    </div>
+    <div class="row">
+      <!-- QA Engineer - Opteran -->
+      <div class="col-lg-12">
+        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <h4 style="text-align:left;"><a href="https://www.opteran.com/" style="color:#12d640">Opteran</a><br></h4>
+          <h5 style="text-align:left;">QA Engineer - Drones | Sheffield, UK</h5>
+          <p style="text-align:left;color:#fff"><em>Mar 2024 – Present</em></p>
+          <ul style="text-align:left;">
+            <li><strong>State Estimation Algorithms:</strong> Developed an EKF-based Visual-Inertial Odometry system using optical flow and IMU data, improving drone stability by 25% during hover scenarios.</li>
+            <li><strong>Prototype Development:</strong> Assembled and validated drone prototypes, executing sensor calibration, tuning, and flight testing using Ardupilot.</li>
+            <li><strong>Automated Testing Frameworks:</strong> Integrated EVO Toolkit into CI/CD workflows to automate validation against ground truth data, reducing manual testing efforts by 40%.</li>
+            <li><strong>Integration:</strong> Designed a ROS2 driver for Leica Robotic Total Station, enabling real-time millimeter-accurate positioning for operations.</li>
+            <li><strong>Vicon Integration:</strong> Integrated Vicon motion capture with ROS2, achieving sub-millimeter accuracy in real-time positioning and control for drones and mobile robots.</li>
+            <li><strong>Automated Real-World Testing Pipeline:</strong> Developed a comprehensive testing framework where robots autonomously navigate within the Vicon space, execute predefined test scenarios, and validate performance metrics, achieving 99% closed-loop control reliability.</li>
+            <li><strong>Autonomy:</strong> Developed a custom Nav2 action client node to receive and execute navigation goals, enhancing autonomous capabilities with the Opteran system.</li>
+            <li><strong>Mobile Robot Optimization:</strong> Fine-tuned Nav2 parameters on the Scout Mini platform, achieving precise 5cm positioning accuracy.</li>
+            <li><strong>Testing, Validation, and Analysis:</strong> Led end-to-end testing and validation of Opteran algorithms against ground-truth metrics, identifying root causes of failures.</li>
+          </ul>
+          <p style="text-align:left;color:#fff"><strong>Key Technologies:</strong> PX4 Autopilot, MAVLink, Vicon, EVO Evaluation Toolkit</p>
+        </div>
+      </div>
+
+      <!-- Robotics Engineer - SS Innovation -->
+      <div class="col-lg-12">
+        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <h4 style="text-align:left;"><a href="https://ssinnovations.com/" style="color:#12d640">SS Innovation</a><br></h4>
+          <h5 style="text-align:left;">Robotics Engineer | Gurgaon, India</h5>
+          <p style="text-align:left;color:#fff"><em>August 2020 – July 2022</em></p>
+          <ul style="text-align:left;">
+            <li><strong>Real-Time Control Systems:</strong>Implemented RTOS-based algorithms for deterministic task execution, achieving 99.8% reliability in time-critical surgical operations.</li>
+            <li><strong>Kinematic & Dynamic Analysis:</strong> Conducted rigorous inverse kinematics and dynamic modeling to optimize robotic manipulator performance, achieving sub-1mm precision in surgical tasks.</li>
+            <li><strong>Precision Motor Integration:</strong> Calibrated and tuned servo motor systems, enhancing torque response by 20% and operational efficiency for high-stakes medical procedures.</li>
+            <li><strong>Surgical GUI Development:</strong> Developed intuitive Qt/QML-based graphical user interfaces (GUIs), reducing preoperative setup time by 40% and streamlining workflows for surgical teams.</li>
+            <li><strong>Head-Tracking Innovation:</strong> Designed and deployed a real-time OptiTrack-powered head-tracking application, reducing unintended robotic interventions by 35% during complex surgeries.</li>
+            <li><strong>Hardware-Software Integration:</strong> Integrated EasyCAT on STM32 microcontrollers, ensuring seamless synchronization between robotic actuators and control systems.</li>
+            <li><strong>Clinical Validation:</strong> Led end-to-end clinical trials at RGCI Hospital for the Mantra Surgical Robotics System, achieving 98% accuracy in live surgical environments and refining system usability.</li>
+            <li><strong>Regulatory Documentation:</strong> Prepared technical documentation and compliance reports for ISO 13485 certification, ensuring adherence to regulatory standards and quality assurance protocols.</li>
+            <li><strong>Preoperative Simulation:</strong> Simulated system accessibility for various placements using Actin software, optimizing preoperative planning and enhancing procedural readiness.</li>
+          </ul>
+          <p style="text-align:left;color:#fff"><strong>Key Technologies:</strong> RTOS, EtherCAT, EasyCAT, ACTIN, MoveIt, OptiTrack, Qt/QML, ISO 13485</p>
+        </div>
+      </div>
+
+      <!-- Robotics Engineer - Flux Auto -->
+      <div class="col-lg-12">
+        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <h4 style="text-align:left;"><a href="https://fluxauto.xyz/" style="color:#12d640">Flux Auto</a><br></h4>
+          <h5 style="text-align:left;">Robotics Engineer | Bangalore, India</h5>
+          <p style="text-align:left;color:#fff"><em>July 2019 – July 2020</em></p>
+          <ul style="text-align:left;">
+            <li><strong>3D Mapping & Localization:</strong> Developed real-time localization pipelines using Autoware’s NDT/ICP algorithms, achieving sub-15 cm accuracy by aligning Robosense 16-channel LiDAR point clouds.</li>
+            <li><strong>SLAM:</strong> Integrated RTAB-Map with ZED stereo cameras on ROS to generate high-resolution 2D/3D grid maps, optimizing path planning and obstacle avoidance in dynamic environments.</li>
+            <li><strong>HD Mapping & Navigation:</strong> Implemented Lanelet2-based HD maps using JOSM, improving navigation precision.</li>
+            <li><strong>Sensor Fusion & Optimization:</strong> Implemented advanced localization filters (Kalman Filters, Particle Filters) to fuse data from LiDAR, RTK-GPS, and IMU systems, ensuring precise localization.</li>
+            <li><strong>Simulation & Validation:</strong> Utilized CARLA Simulator to test 50+ edge cases, reducing real-world testing requirements by 40% and enhancing system robustness in adverse conditions.</li>
+            <li><strong>Advanced Perception Algorithms:</strong> Designed a RANSAC-based ground segmentation pipeline for 3D LiDAR data to develop a custom grid map.</li>
+            <li><strong>Marker-Based Localization:</strong> Engineered ArUco marker-based pose estimation for automation applications, achieving sub-5 cm drift in structured environments.</li>
+            <li><strong>Simulation & Autonomy:</strong> Simulated tractors and forklifts in Gazebo with CAD models, integrating the Hector SLAM / Slam Toolbox and the ROS Navigation stack for path planning and localization in various operational scenarios.</li>
+          </ul>
+          <p style="text-align:left;color:#fff"><strong>Key Technologies:</strong> ROS, SLAM, Autoware, C++/Python, CARLA, Gazebo, OpenCV, PCL</p>
+        </div>
+      </div>
+
+      <!-- Robotics Engineer Intern - Alog Tech -->
+      <div class="col-lg-12">
+        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <h4 style="text-align:left;"><a href="https://www.alogtech.com/" style="color:#12d640">Alog Tech</a><br></h4>
+          <h5 style="text-align:left;">Robotics Engineer Intern | Hyderabad, India</h5>
+          <p style="text-align:left;color:#fff"><em>June 2019 – August 2019</em></p>
+          <ul style="text-align:left;">
+            <li><strong>Grid-Based SLAM Solution:</strong> Engineered high-precision 2D environment mapping using Intel RealSense D435i and GMapping in ROS.</li>
+            <li><strong>Navigation Stack Integration:</strong> Integrated ROS navigation stack, achieving seamless path planning and obstacle avoidance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experience Section -->
+
+
+<!-- Projects Section -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <h2>Projects</h2>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="row portfolio-container">
+      <!-- Project 1: Personal Portfolio -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/project/my_arm_rl.png" class="img-fluid" alt="Personal Portfolio">
+          </div>
+          <div class="project-content">
+                  <h4>Reinforcement Learning</h4>
+       		 <p>Used PPO (Proximal Policy Optimization) to train a manipulator to achieve goals and move from one place to another in gazebo simulation.</p>
+            <div class="project-links">
+              <a href="https://github.com/tarunkumarmpc/personal-portfolio" target="_blank" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+              <a href="https://www.youtube.com/watch?v=yPUpkOn2TKY" target="_blank" title="YouTube Demo">
+                <i class="fa-brands fa-youtube"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Collaborative Robot Navigation -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/project/collaborative.png" class="img-fluid" alt="Collaborative Robot Navigation">
+          </div>
+          <div class="project-content">
+            <h4>Collaborative Robot Navigation</h4>
+            <p>Engineered a sophisticated system for collaborative robot navigation in dynamic environments using advanced algorithms.</p>
+            <div class="project-links">
+              <a href="https://github.com/tarunkumarmpc/collaborative-robot-navigation" target="_blank" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+              <a href="https://www.youtube.com/watch?v=5yeniUlgbf8" target="_blank" title="YouTube Demo">
+                <i class="fa-brands fa-youtube"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Dissertation -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/project/disseration.png" class="img-fluid" alt="Dissertation">
+          </div>
+          <div class="project-content">
+           <h4>Comparative Analysis of SLAM Techniques</h4>
+            <p>This project compares Deep Learning-Based SLAM (DeepVO) and Traditional SLAM (ORB-SLAM), incorporating semantic segmentation to enhance performance in dynamic environments.</p>
+            <div class="project-links">
+              <a href="https://github.com/tarunkumarmpc/dissertation" target="_blank" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+              <a href="https://www.youtube.com/watch?v=example_video_id" target="_blank" title="YouTube Demo">
+                <i class="fa-brands fa-youtube"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View More Projects Button -->
+    <div class="col-lg-12 text-center mt-4">
+      <label for="toggle-more-projects" class="btn btn-primary">View More Projects</label>
+    </div>
+
+    <!-- Hidden Checkbox -->
+    <input type="checkbox" id="toggle-more-projects" style="display: none;">
+
+    <!-- Additional Projects Section -->
+    
+    
+    <div id="more-projects" class="row portfolio-container" style="margin-top: 30px;">
+      <!-- Project 4: Line Follower -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/project/line_follower.png" class="img-fluid" alt="Line Follower">
+          </div>
+          <div class="project-content">
+            <h4>Line Follower</h4>
+            <p>Developed a line-following robot capable of navigating complex paths using sensor feedback and control algorithms.</p>
+            <div class="project-links">
+              <a href="https://github.com/tarunkumarmpc/line-follower" target="_blank" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+              <a href="https://www.youtube.com/watch?v=dNSUBJ1DqjA" target="_blank" title="YouTube Demo">
+                <i class="fa-brands fa-youtube"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/project/website.png" class="img-fluid" alt="Personal Portfolio">
+          </div>
+          <div class="project-content">
+            <h4>Personal Portfolio</h4>
+            <p>A responsive personal portfolio website showcasing my skills and projects, built with modern web technologies.</p>
+            <div class="project-links">
+              <a href="https://github.com/tarunkumarmpc/personal-portfolio" target="_blank" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+              <a href="https://www.youtube.com/watch?v=example_video_id" target="_blank" title="YouTube Demo">
+                <i class="fa-brands fa-youtube"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 5: Drone Simulation -->
+      <div class="col-lg-4 col-md-6 portfolio-item">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/project/drone_simulation.png" class="img-fluid" alt="Drone Simulation">
+          </div>
+          <div class="project-content">
+            <h4>Drone Simulation</h4>
+            <p>Simulated drone navigation and obstacle avoidance in Gazebo, leveraging ROS and PX4 for realistic behavior modeling.</p>
+            <div class="project-links">
+              <a href="https://github.com/tarunkumarmpc/drone-simulation" target="_blank" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+              <a href="https://www.youtube.com/watch?v=-6_iVPGPR38" target="_blank" title="YouTube Demo">
+                <i class="fa-brands fa-youtube"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more projects here -->
+    </div>
+  </div>
+</section>
+
+
+
+<section id="skills" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" data-aos="fade-up">
+        <!-- Programming Languages -->
+        <div class="icon-box mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+          <h4 style="text-align:left; color:#09203a">Programming Languages</h4>
+          <p class="skill-logos">
+            <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python Programming Language" height="50">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Programming Language" height="50">
+            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5 Web Technology" height="50">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Styling Technology" height="50">
+          </p>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="icon-box mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+          <h4 style="text-align:left; color:#09203a">Frameworks</h4>
+          <p class="skill-logos">
+            <img src="assets/img/certification/ros_logo.png" alt="ROS Robotics Framework" height="50">
+            <img src="assets/img/certification/ros2_logo.png" alt="ROS2 Robotics Framework" height="50">
+            <img src="assets/img/certification/nav2.png" alt="Nav2 Navigation Framework" height="50">
+            <img src="assets/img/certification/moveit2.png" alt="MoveIt Motion Planning Framework (1 & 2)" height="50">
+            <img src="assets/img/certification/gazebo.jpeg" alt="Gazebo Simulation Framework" height="50">
+             <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch Machine Learning Framework (Reinforcement Learning)" height="50">
+            <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV Computer Vision Library (Object Detection)" height="50">
+            <img src="assets/img/certification/carla.png" alt="CARLA Autonomous Driving Simulator" height="50">
+            <img src="assets/img/certification/pcl_logo.png" alt="PCL Point Cloud Library" height="50">
+             <img src="assets/img/certification/Qground.png" alt="Qground control" height="50">
+            <img src="assets/img/certification/ardupilot_logo.png" alt="ArduPilot Autopilot Framework" height="50">
+            <img src="assets/img/certification/qt_logo.png" alt="Qt Application Framework" height="50">
+            <img src="assets/img/certification/qml.jpeg" alt="QML UI Framework" height="50">
+          </p>
+        </div>
+
+        <!-- Tools -->
+        <div class="icon-box mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+          <h4 style="text-align:left; color:#09203a">Tools</h4>
+          <p class="skill-logos">
+            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git Version Control System" height="50">
+            <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter Notebook Environment" height="50">
+            <img src="assets/img/certification/docker.png" alt="Docker Container Platform" height="50">
+            <img src="assets/img/certification/colab.png" alt="Google Colab Cloud Notebook" height="50">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section id="resume" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Resume</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12 icon-box">
+          <a href="https://drive.google.com/file/d/1p41z5hQJXTcKi7aBZXQjFKVVpn6Qbf5i/view?usp=sharing" target="_blank">
+            <i class="fa-solid fa-file-pdf fa-3x" style="color: #12D640;"></i>
+          </a>
+          <p>Download my resume to learn more about my qualifications and experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs Section -->
+  <section id="blogs" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Blogs</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 icon-box">
+          <h4><a href="https://example.com/blog1" target="_blank">AI in Robotics</a></h4>
+          <p>Exploring the role of AI in modern robotics applications.</p>
+        </div>
+        <div class="col-md-6 icon-box">
+          <h4><a href="https://example.com/blog2" target="_blank">SLAM Techniques</a></h4>
+          <p>An overview of SLAM techniques in autonomous navigation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacts" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 icon-box">
+          <i class="fa-solid fa-map-location-dot fa-2x" style="color: #12D640;"></i>
+          <h4>Address</h4>
+          <p>58 Gate House Avenue, Bristol, UK, BS13 9AE</p>
+        </div>
+        <div class="col-md-6 icon-box">
+          <i class="fa-solid fa-envelope fa-2x" style="color: #12D640;"></i>
+          <h4>Email</h4>
+          <p>tarunkumarmpc@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p>© 2023 Tarun Kumar Bagadi. All Rights Reserved</p>
+  </div>
+</footer>
+  <!-- Typed.js Script -->
+  <script>
+    var typed = new Typed('.typing', {
+      strings: ["Robotics Enthusiast", "Robotics Engineer", "AI Enthusiast"],
+      loop: true,
+      typeSpeed: 65,
+      backSpeed: 65
+    });
+  </script>
+</body>
+</html>

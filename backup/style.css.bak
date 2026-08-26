@@ -1,0 +1,357 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+}
+
+header > .container {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-img img:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #4CAF50;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4CAF50;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about ul {
+  padding-left: 0;
+}
+
+.about ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about ul li i {
+  margin-right: 10px;
+  color: #4CAF50;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+/* Reduced Font Size for Interests Section */
+.interests .icon-box h3 {
+  font-size: 14px; /* Smaller font size */
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #333;
+}
+
+#experience .icon-box ul {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+#experience .icon-box li {
+  break-inside: avoid;
+  margin-bottom: 15px;
+}
+
+#experience .icon-box h4 a {
+  color: #4CAF50;
+}
+
+.portfolio .project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  height: 100%;
+}
+
+.portfolio .project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.portfolio .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.portfolio .project-card:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+.portfolio .project-card:hover .project-image img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.portfolio .project-content {
+  padding: 20px;
+}
+
+.portfolio .project-content h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.portfolio .project-content p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.portfolio .project-links a {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.portfolio .project-links a:hover {
+  color: #388E3C;
+}
+
+.portfolio .project-links i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+footer {
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+footer .credits a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer .social-links {
+  margin-top: 15px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e3c72;
+    padding: 20px;
+  }
+  .nav-menu.active {
+    display: block;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #experience .icon-box ul {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Initially hide the "More Projects" section */
+#more-projects {
+  display: none;
+}
+
+/* Show the "More Projects" section when the checkbox is checked */
+#toggle-more-projects:checked ~ #more-projects {
+  display: flex;
+}
+
+/* Styling for the "View More Projects" button */
+label[for="toggle-more-projects"] {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #1c7d32;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+label[for="toggle-more-projects"]:hover {
+  background: #388E3C;
+}
+
+/* Reduce font size for online certification titles */
+#education .section-title + .row h4 {
+  font-size: 1rem; /* Adjust this value as needed */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #fff; /* Adjust based on your design */
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}

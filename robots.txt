@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://your-github-username.github.io/portfolio/sitemap.xml
+
+# Avoid crawling backup and vendor files
+Disallow: /backup/
+Disallow: /assets/vendor/

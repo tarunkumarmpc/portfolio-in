@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tarun Kumar Bagadi - Robotics Engineer specializing in state estimation, autonomous systems, and real-time control.">
+  <meta name="theme-color" content="#F7F6F3">
+
+  <meta property="og:title" content="Tarun Kumar Bagadi | Robotics Engineer">
+  <meta property="og:description"
+    content="Building robust autonomous systems, from surgical manipulators to GPS-denied drones.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tarunkumar.com">
+  <meta property="og:image" content="https://tarunkumar.com/assets/img/profile.png">
+
+  <title>Tarun Kumar Bagadi - Robotics Engineer</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/img/profile.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="#">
+          <span class="logo-icon">■</span>
+          Tarun Kumar Bagadi
+        </a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Systems</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="https://drive.google.com/file/d/1p41z5hQJXTcKi7aBZXQjFKVVpn6Qbf5i/view?usp=sharing"
+            class="nav-resume" target="_blank" rel="noopener">
+            <i class="fas fa-file-pdf"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="hero-clean">
+    <div class="container">
+      <div class="hero-clean-header">
+        <div class="hero-eyebrow-clean">
+          <span class="status-dot"></span> Open to Senior Robotics roles
+        </div>
+        <h1 class="hero-title-clean">Tarun Kumar Bagadi</h1>
+        <h2 class="hero-subtitle-clean">Core Autonomy Engineer</h2>
+        <p class="hero-desc-clean">
+          I build the core software that makes robots autonomous. With 6 years of experience, I engineer multi-modal
+          mapping and localization pipelines
+          (<strong>2D/3D SLAM, Vision-SLAM, VO/VIO/LIO</strong>), architect robust <strong>sensor fusion and real-time
+            control</strong> algorithms, and integrate <strong>deep learning &amp; reinforcement learning</strong> to
+          deploy full autonomy
+          across manipulators, aerial vehicles, and autonomous ground vehicles.
+        </p>
+        <div class="hero-cta-clean">
+          <a href="#projects" class="btn btn-primary-clean">View Systems</a>
+          <a href="https://github.com/tarunkumarmpc" target="_blank" rel="noopener" class="btn btn-outline-clean"><i
+              class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/tarun-kumar-bagdai-9a1673123/" target="_blank" rel="noopener"
+            class="btn btn-outline-clean"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">I build the whole system.</h2>
+      <div class="section-subtitle">Not one layer &mdash; the complete stack, across every platform type.</div>
+
+      <div class="about-grid">
+        <img src="assets/img/profile.png" alt="Tarun Kumar Bagadi" class="about-photo">
+        <div class="about-body">
+          <p>Over 6 years I've built production systems at
+            every layer &mdash; perception, SLAM, state estimation, control, navigation, and learning &mdash; and
+            deployed them on real hardware across different robot types.</p>
+          <p>On the <strong>perception and mapping side</strong>: I've implemented 2D grid SLAM (GMapping, Hector), 3D
+            LiDAR-based mapping and localization (NDT/ICP, Point-LIO, RTAB-Map), and vision-based SLAM (ORB-SLAM2,
+            EKF-VIO, Visual Graph SLAM ). My MSc thesis at Bristol evaluated ORB-SLAM2 vs DeepVO on the
+            full KITTI benchmark, integrating DeepLab v3+ semantic masking to assess trajectory robustness under
+            dynamic scene conditions.</p>
+          <p>On the <strong>control and navigation side</strong>: I've written RTOS algorithms for a 6-DOF surgical arm
+            achieving high-precision control, stabilize drones
+            in GPS-denied environments, implemented 3D Navigation Stack for aerial collision avoidance with
+            MPC-based recovery, and fine-tuned Nav2 on the Scout Mini AMR to 5cm
+            positioning accuracy. I've also applied PPO and SAC reinforcement learning to 7-DOF robotic manipulation
+            in Gazebo Harmonic.</p>
+          <p>The platforms I've deployed on: <strong>surgical manipulators, quadcopters, fixed-wing UAVs, autonomous
+              ground vehicles, and AMRs</strong>. Different kinematics, different failure modes, different real-time
+            constraints &mdash; same engineering rigour applied throughout.</p>
+          <div class="about-facts">
+            <div class="fact">
+              <div class="fact-value">6+</div>
+              <div class="fact-label">Years in production robotics</div>
+            </div>
+            <div class="fact">
+              <div class="fact-value">5+</div>
+              <div class="fact-label">Robot platform types</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Where I've built</h2>
+      <div class="section-subtitle">Professional track record.
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <h3 class="exp-role">Senior Robotics Engineer</h3>
+            <div class="exp-company">Motion Robotics (Mobile Robots and Drones)</div>
+            <div class="exp-meta">Jul 2025 – Present | Southampton, UK</div>
+          </div>
+          <p class="exp-summary">Owned the <strong>full autonomy lifecycle</strong> for mobile robots and UAVs—from
+            initial simulation development to physical real-world deployment. Engineered a robust <strong>Behavior Tree
+              state machine</strong> orchestrating autonomous Nav2 navigation, <strong>AprilTag-based precision
+              docking</strong>, and automated payload manipulation (lift and secure). Developed and validated a custom
+            <strong>real-time 3D navigation stack</strong> across both simulation and real-world flights. Implemented
+            <strong>custom Ardupilot flight modes</strong> integrating Time-of-Flight (ToF) sensors for precise
+            wall-approach maneuvers. Led comprehensive platform integration by importing custom Fusion 360 CAD into
+            Gazebo
+            for Ardupilot SITL validation, and executed rigorous PID tuning in <strong>both simulated and real-world
+              environments</strong> across small, medium, and <strong>heavy-lift drone architectures</strong>.
+          </p>
+          <div class="exp-tags">
+            <span>ROS2/Nav2</span><span>Ardupilot SITL</span><span>Behavior Trees</span><span>AprilTag</span><span>
+              3D Navigation</span><span>Gazebo</span>
+          </div>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <h3 class="exp-role">Drone Engineer</h3>
+            <div class="exp-company">Opteran (Drones) </div>
+            <div class="exp-meta">Apr 2024 – Jun 2025 | Sheffield, UK</div>
+          </div>
+          <p class="exp-summary">Developed an EKF-based Visual-Inertial Odometry system fusing optical flow and IMU
+            data, <strong>improving drone hover stability</strong> in GPS-denied environments. Engineered a fully
+            automated CI/CD validation pipeline integrating Vicon motion capture with ROS2,
+            <strong>cutting manual testing effort by 40%</strong>. Built a custom Nav2 action client for autonomous
+            goal execution, and fine-tuned Scout Mini AMR navigation parameters to
+            <strong>5cm positioning accuracy</strong>. Also designed a ROS2 driver for a Leica Robotic
+            Total Station enabling millimetre-accurate real-time positioning.</p>
+          <div class="exp-tags">
+            <span>EKF VIO</span><span>PX4</span><span>ROS2</span><span>Vicon</span><span>CI/CD
+              Validation</span><span>Nav2</span>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--edu fade-up">
+          <div class="exp-header">
+            <h3 class="exp-role">MSc Aerial Robotics <span class="edu-badge">Education</span></h3>
+            <div class="exp-company">University of Bristol, UK</div>
+            <div class="exp-meta">Sep 2022 – Sep 2023 | Bristol, UK</div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <h3 class="exp-role">Robotics Engineer</h3>
+            <div class="exp-company">SS Innovation (Surgical Robotics)</div>
+            <div class="exp-meta">Aug 2020 – Jul 2022 | Gurgaon, India</div>
+          </div>
+          <p class="exp-summary">Engineered core control systems and safety architectures for a 6-DOF surgical
+            manipulator, implementing deterministic RTOS algorithms on STM32 via EtherCAT for real-time control
+            in live operating room conditions. Conducted rigorous IK and dynamic
+            modelling, and developed a Qt/QML surgical GUI that <strong>reduced preoperative setup time by 40%</strong>.
+            Designed an OptiTrack head-tracking safety system that <strong>reduced unintended interventions by
+              35%</strong>. Led full-cycle clinical trials at RGCI Hospital for the Mantra Surgical Robotics System,
+            achieving <strong>98% task-completion accuracy</strong> across clinical validation trials. Prepared ISO 13485 compliance
+            documentation.</p>
+          <div class="exp-tags">
+            <span>RTOS</span><span>EtherCAT</span><span>STM32</span><span>Inverse
+              Kinematics</span><span>Qt/C++</span><span>ISO 13485</span>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="exp-header">
+            <h3 class="exp-role">Robotics Engineer</h3>
+            <div class="exp-company">Flux Auto (Autonomous Vehicles)</div>
+            <div class="exp-meta">Jul 2019 – Jul 2020 | Bangalore, India</div>
+          </div>
+          <p class="exp-summary">Owned the core perception and localization stack for autonomous ground vehicles. Fused
+            Robosense 16-channel LiDAR with RTK-GPS and IMU through Kalman/Particle filters, achieving <strong>sub-15cm
+              accuracy</strong> via Autoware's NDT/ICP algorithms. Engineered RANSAC-based ground segmentation,
+            integrated RTAB-Map with ZED stereo cameras for 2D/3D grid mapping, and implemented Lanelet2 HD maps for
+            precision navigation. Used CARLA to simulate <strong>50+ edge cases</strong>, <strong>reducing real-world
+              testing requirements by 40%</strong>.</p>
+          <div class="exp-tags">
+            <span>Autoware</span><span>NDT/ICP</span><span>Sensor
+              Fusion</span><span>PCL</span><span>CARLA</span><span>RTAB-Map</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Academic background</h2>
+      <div class="edu-grid">
+        <div class="edu-card fade-up">
+          <div class="edu-degree">MSc Aerial Robotics</div>
+          <div class="edu-school">University of Bristol, UK</div>
+          <div class="edu-period">Sep 2022 – Sep 2023</div>
+          <p class="edu-note">Thesis: Evaluation of Deep Learning-Based SLAM vs Traditional SLAM Methods (ORB-SLAM2 vs
+            DeepVO on KITTI). Coursework: Aerial Robotics, Aerospace Dynamics, Uncertainty Modelling for Intelligent
+            Systems.</p>
+        </div>
+        <div class="edu-card fade-up">
+          <div class="edu-degree">BTech Electronics &amp; Communication Engineering</div>
+          <div class="edu-school">IIIT Guwahati, India</div>
+          <div class="edu-period">Jul 2015 – May 2019</div>
+          <p class="edu-note">Focus on Control Systems, Embedded Systems, and DSP. Final project implemented multi-robot
+            velocity consensus algorithm achieving 35% navigation error reduction with Hector SLAM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Selected technical work</h2>
+      <div class="section-subtitle">Deep dives into pipelines, architectures, and implementations I've designed.</div>
+
+      <div class="projects-grid">
+        <div class="project-card fade-up">
+          <div class="project-index">SYS-01</div>
+          <div class="project-media">
+            <img
+              src="https://raw.githubusercontent.com/tarunkumarmpc/visual_graph_slam/main/docs/assets/mono_imu_trajectory.png"
+              alt="Mono+IMU SLAM trajectory vs ground truth on KITTI" loading="lazy">
+            <span class="project-media-label">KITTI Drive 0033 — Mono+IMU vs GT</span>
+          </div>
+          <h3>Visual Graph SLAM Pipeline</h3>
+          <p>Modular C++ SLAM system with interchangeable frontend and optimization plugins. Supports Mono and Mono-IMU
+            execution. DBoW3 loop closure + GTSAM/g2o backend. Evaluated on KITTI — trajectory and APE plots above are
+            live results from the system.</p>
+          <div class="project-tech">
+            <span>C++</span><span>GTSAM</span><span>g2o</span><span>DBoW3</span><span>ROS2</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tarunkumarmpc/visual_graph_slam" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-index">SYS-02</div>
+          <div class="project-media project-media--diagram">
+            <div class="pipeline-diagram">
+              <span>Camera</span><i class="fas fa-arrow-right"></i>
+              <span>AprilTag EKF</span><i class="fas fa-arrow-right"></i>
+              <span>Dock Server</span><i class="fas fa-arrow-right"></i>
+              <span>PID/MPC</span><i class="fas fa-arrow-right"></i>
+              <span>/cmd_vel</span>
+            </div>
+            <span class="project-media-label">DockPilot — AprilTag autonomous docking stack</span>
+          </div>
+          <h3>Autonomous Docking Stack (DockPilot)</h3>
+          <p>Full-stack ROS2 autonomous docking pipeline: AprilTag visual detection, EKF-based 6-DOF pose estimation,
+            multi-dock YAML config, and pluggable velocity controllers — PID, Pure Pursuit, LQR, and MPC. Tested on real
+            hardware.</p>
+          <div class="project-tech">
+            <span>C++</span><span>AprilTag</span><span>EKF</span><span>MPC/PID</span><span>ROS2</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tarunkumarmpc/ros2_docking" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-index">SYS-03</div>
+          <div class="project-media">
+            <img
+              src="https://raw.githubusercontent.com/tarunkumarmpc/ros2-pick-and-place/main/videos/moveit_rviz_joint.gif"
+              alt="MoveIt2 RViz joint planning for 7-DOF arm" loading="lazy">
+            <span class="project-media-label">MoveIt2 RViz — live joint trajectory planning</span>
+          </div>
+          <h3>7-DOF Arm — Autonomous Pick &amp; Place</h3>
+          <p>Complete simulation pipeline for a 7-DOF manipulator in Gazebo Harmonic + ROS2 Jazzy. Eye-in-hand RGB-D
+            perception (HSV + contour detection → tf2 broadcast), MoveIt2 IK for collision-free trajectories, and a
+            state machine handling approach, grasp, and drop. PPO/SAC RL applied for reach tasks.</p>
+          <div class="project-tech">
+            <span>ROS2 Jazzy</span><span>MoveIt2</span><span>Gazebo</span><span>SAC/PPO</span><span>PyTorch</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/tarunkumarmpc/ros2-pick-and-place" target="_blank" class="project-link"><i
+                class="fab fa-github"></i> Source</a>
+            <a href="https://raw.githubusercontent.com/tarunkumarmpc/ros2-pick-and-place/main/videos/autonmous_pick_up.gif"
+              target="_blank" class="project-link"><i class="fas fa-play-circle"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-more-container">
+        <button class="view-more-btn" id="viewMoreBtn" aria-expanded="false">
+          <span>View Additional Implementations</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <div class="all-projects-section" id="moreProjectsSection">
+        <div class="projects-secondary-title">Academic & Utility Implementations</div>
+        <div class="all-projects-grid">
+          <div class="project-card-compact">
+            <h4>SLAM Comparison &mdash; MSc Thesis (Bristol)</h4>
+            <p>Benchmarked ORB-SLAM2 vs DeepVO across the full KITTI dataset. ORB-SLAM2 outperformed DeepVO on ATE/RPE
+              metrics; DeepLab v3+ semantic masking reduced feature noise in dynamic scenes but showed negligible effect
+              on overall trajectory drift at KITTI scale.</p>
+            <div class="project-tech-compact"><span>ORB-SLAM2</span><span>DeepVO</span><span>DeepLab
+                v3+</span><span>KITTI</span></div>
+            <a href="https://github.com/tarunkumarmpc/Disseration" target="_blank" class="compact-gh-link"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+          <div class="project-card-compact">
+            <h4>7-DOF Arm &mdash; SAC Reinforcement Learning</h4>
+            <p>Offline-to-Online SAC policy for autonomous reach tasks on a 7-DOF manipulator in Gazebo Harmonic +
+              ROS2 Jazzy. Custom reward shaping, curriculum-based target sampling, and ROS2 trajectory streaming
+              architecture for real-time policy deployment.</p>
+            <div class="project-tech-compact"><span>SAC/PPO</span><span>PyTorch</span><span>ROS2
+                Jazzy</span><span>Gazebo</span><span>Stable-Baselines3</span></div>
+            <a href="https://github.com/tarunkumarmpc/seven_dof_arm_rl" target="_blank" class="compact-gh-link"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+          <div class="project-card-compact">
+            <h4>SLAM Evaluator Framework</h4>
+            <p>Automated EVO-based trajectory analysis pipeline for systematic benchmarking across SLAM algorithms.
+              Computes ATE, RPE, and drift metrics, outputting structured comparison reports across algorithm runs.</p>
+            <div class="project-tech-compact"><span>Python</span><span>EVO</span><span>ROS2</span></div>
+            <a href="https://github.com/tarunkumarmpc/slam_evalutor" target="_blank" class="compact-gh-link"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+          <div class="project-card-compact">
+            <h4>Motion 3D Navigation Stack</h4>
+            <p>Aerial navigation system with 5-stage PCL perception pipeline, Theta* 3D path planner for collision
+              avoidance, MPC-based takeoff recovery, and explicit TF zero-latching to guarantee frame stability during
+              dynamic waypoint execution.</p>
+            <div class="project-tech-compact">
+              <span>PCL</span><span>Theta*</span><span>MPC</span><span>Nav2</span><span>ROS2</span>
+            </div>
+            <span class="compact-nda-note">&#128274; Repository in preparation</span>
+          </div>
+          <div class="project-card-compact">
+            <h4>ROS2 AprilTag Docking</h4>
+            <p>Fully autonomous docking package using AprilTag visual fiducials. EKF-based 6-DOF pose estimation
+              pipeline, multi-dock station config via YAML, and pluggable controllers (PID, Pure Pursuit, LQR, MPC).</p>
+            <div class="project-tech-compact"><span>C++</span><span>AprilTag</span><span>EKF</span><span>ROS2</span>
+            </div>
+            <a href="https://github.com/tarunkumarmpc/ros2_docking" target="_blank" class="compact-gh-link"><i
+                class="fab fa-github"></i> Source</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical stack</h2>
+      <div class="section-subtitle">Languages, frameworks, and domain expertise deployed in production environments.
+      </div>
+
+      <div class="tech-skills-grid fade-up">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">C</span>
+            <span class="skill-tag">CMake</span><span class="skill-tag">Bash</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Robotics Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">ROS/ROS2</span><span class="skill-tag">Nav2</span><span
+              class="skill-tag">MoveIt2</span>
+            <span class="skill-tag">PX4</span><span class="skill-tag">Ardupilot</span><span
+              class="skill-tag">CARLA</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>State Estimation &amp; SLAM</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">EKF/ESKF</span><span class="skill-tag">VIO</span><span
+              class="skill-tag">NDT/ICP</span>
+            <span class="skill-tag">RTAB-Map</span><span class="skill-tag">ORB-SLAM2</span><span
+              class="skill-tag">GTSAM</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Perception</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PCL</span><span class="skill-tag">OpenCV</span><span class="skill-tag">YOLOv8</span>
+            <span class="skill-tag">DeepLab v3+</span><span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Embedded &amp; Real-Time</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">RTOS</span><span class="skill-tag">EtherCAT</span><span
+              class="skill-tag">STM32</span>
+            <span class="skill-tag">MAVLink</span><span class="skill-tag">Jetson</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps &amp; Tooling</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span><span class="skill-tag">Docker</span><span class="skill-tag">GitHub
+              Actions</span>
+            <span class="skill-tag">CI/CD</span><span class="skill-tag">RViz</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="domain-expertise-title">Domain expertise</h3>
+      <div class="domain-grid">
+        <div class="domain-card fade-up">
+          <h3>Surgical &amp; Industrial Arms</h3>
+          <ul class="domain-list">
+            <li>6-DOF real-time RTOS control</li>
+            <li>High-precision motion control in live clinical environments</li>
+            <li>EtherCAT hardware synchronization</li>
+            <li>Inverse kinematics &amp; dynamic modelling</li>
+            <li>ISO 13485 compliance &amp; documentation</li>
+          </ul>
+        </div>
+        <div class="domain-card fade-up">
+          <h3>Drones &amp; UAVs</h3>
+          <ul class="domain-list">
+            <li>PX4 / Ardupilot autopilot integration</li>
+            <li>EKF-based VIO for GPS-denied environments</li>
+            <li>Vicon motion-capture ground truth pipelines</li>
+            <li>Automated CI/CD flight test validation</li>
+            <li>Quadcopter &amp; fixed-wing build, tune, validate</li>
+          </ul>
+        </div>
+        <div class="domain-card fade-up">
+          <h3>Autonomous Ground Vehicles</h3>
+          <ul class="domain-list">
+            <li>Full AV perception stack (Autoware)</li>
+            <li>Multi-sensor fusion: LiDAR + RTK-GPS + IMU</li>
+            <li>NDT/ICP localization at sub-15cm accuracy</li>
+            <li>RANSAC-based ground segmentation pipelines</li>
+            <li>Lanelet2 HD map generation &amp; integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <div class="container">
+      <h2 class="section-title">Full CV</h2>
+      <div class="resume-card fade-up">
+        <div class="resume-info">
+          <h3>Tarun Kumar Bagadi &mdash; Robotics Engineer</h3>
+          <p>6+ years across medical robotics, autonomous vehicles, and drones. PDF format, updated 2026.</p>
+        </div>
+        <a href="https://drive.google.com/file/d/1p41z5hQJXTcKi7aBZXQjFKVVpn6Qbf5i/view?usp=sharing" target="_blank"
+          rel="noopener" class="resume-btn">
+          <i class="fas fa-file-pdf"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Let's solve something hard</h2>
+
+      <div class="contact-wrapper fade-up">
+        <div class="contact-info">
+          <div class="looking-for-card">
+            <div class="looking-for-label"><i class="fas fa-search"></i> What I'm looking for</div>
+            <ul class="looking-for-list">
+              <li><strong>Role:</strong> Senior / Staff Robotics Engineer or Autonomy Engineer</li>
+              <li><strong>Type:</strong> Full-time — open to India-based, remote, or international roles</li>
+            </ul>
+          </div>
+          <p class="contact-intro">Not a perfect fit? Still reach out. If the problem is hard and involves robots, I
+            want to hear about it.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:tarunkumarmpc@gmail.com">tarunkumarmpc@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/tarun-kumar-bagdai-9a1673123/"
+                  target="_blank">linkedin.com/in/tarun-kumar-bagdai</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/tarunkumarmpc" target="_blank">github.com/tarunkumarmpc</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+          <p class="form-note">Or email directly: <a href="mailto:tarunkumarmpc@gmail.com">tarunkumarmpc@gmail.com</a>
+          </p>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; 2026 Tarun Kumar Bagadi. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/tarunkumarmpc" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/tarun-kumar-bagdai-9a1673123/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

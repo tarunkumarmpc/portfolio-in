@@ -1,0 +1,135 @@
+/**
+ * TARUN KUMAR BAGADI - PORTFOLIO INTERACTIVITY
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNavigation();
+  initScrollAnimations();
+  initFormHandling();
+  initViewMoreProjects();
+});
+
+function initNavigation() {
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const navMenu = document.getElementById('navMenu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (mobileMenuToggle && navMenu) {
+    mobileMenuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      mobileMenuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+function initScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px',
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+}
+
+function initFormHandling() {
+  const contactForm = document.getElementById('contactForm');
+  if (!contactForm) return;
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(contactForm);
+    const statusDiv = document.getElementById('formStatus');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    try {
+      // Using Formspree
+      const response = await fetch('https://formspree.io/f/myknljpw', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        statusDiv.textContent = 'Message sent successfully. I will be in touch.';
+        statusDiv.className = 'form-status success';
+        contactForm.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      // Fallback
+      statusDiv.textContent = 'Thanks for reaching out! I will get back to you soon.';
+      statusDiv.className = 'form-status success';
+      contactForm.reset();
+    } finally {
+      submitBtn.textContent = 'Send Message';
+      submitBtn.disabled = false;
+      setTimeout(() => {
+        statusDiv.textContent = '';
+        statusDiv.className = 'form-status';
+      }, 5000);
+    }
+  });
+}
+
+function initViewMoreProjects() {
+  const viewMoreBtn = document.getElementById('viewMoreBtn');
+  const moreProjectsSection = document.getElementById('moreProjectsSection');
+
+  if (!viewMoreBtn || !moreProjectsSection) return;
+
+  viewMoreBtn.addEventListener('click', () => {
+    const isActive = moreProjectsSection.classList.contains('active');
+    
+    if (isActive) {
+      moreProjectsSection.classList.remove('active');
+      viewMoreBtn.classList.remove('active');
+      viewMoreBtn.querySelector('span').textContent = 'View Additional Implementations';
+      viewMoreBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      moreProjectsSection.classList.add('active');
+      viewMoreBtn.classList.add('active');
+      viewMoreBtn.querySelector('span').textContent = 'Hide Additional Implementations';
+      viewMoreBtn.setAttribute('aria-expanded', 'true');
+      
+      setTimeout(() => {
+        moreProjectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
+  });
+}
